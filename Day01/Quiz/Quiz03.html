@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="fo" action="Quiz02.html">
+        <table>
+            <tr>
+                <td colspan="2">
+                    다음 <mark style="background-color: orange;">내용에 맞게 입력</mark> 하시오<br>
+                    전공 분야를 입력하세요 
+                    <select size="1">
+                        <option selected>소프트웨어</option>
+                        <option>네트워크보안</option>
+                        <option>데이터베이스</option>
+                        <option>서버</option>
+                    </select>
+                </td>
+                <td rowspan ="2">
+                    <img src="kitty.png" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    이름<br>
+                    아이디<br>
+                    비밀번호<br>
+                </td>
+                <td>
+                    <div>
+                         <input type="text" id="name"><br>
+                        <input type="text" id="id"><br>
+                        <input type="password" id="pwd"><br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <fieldset>
+                        <legend>성별조사</legend>
+                        여성<input type="radio" name="gender" checked>
+                        남성<input type="radio" name="gender">
+                    </fieldset> 
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <fieldset>
+                        <legend>취미조사</legend>
+                        책읽기<input type="checkbox" name="hobby">
+                        공부하기<input type="checkbox" name="hobby">
+                        책 읽으며 공부하기<input type="checkbox" name="hobby">
+                        컴퓨터<input type="checkbox" name="hobby">
+                    </fieldset> 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    하고 싶은 말<br>
+                    <textarea rows="5" cols="60"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button type="submit" id="comp">완료</button>
+                    <!-- submit은 무조건 action을 진행시킴 -->
+                    <button type="reset" id="reset">다시 작성</button>
+                </td>
+            </tr>
+        </table> 
+    </form>
+</body>
+</html>
